@@ -118,3 +118,41 @@ nav ul li a {
     margin-bottom:40px;
 }
 
+
+.midokoro {
+    height: calc(100vh - 100px);
+    padding: 30px 8%;
+    text-align: center;
+}
+
+.midokoro h2 {
+    font-size: 32px;
+    margin: 0 0 20px;
+}
+
+.festival {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.festival img {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    display: block;
+}
+
+.description {
+    padding: 15px 20px;
+}
+
+.description h3 {
+    font-size: 24px;
+    margin: 0 0 8px;
+}
+
+.description p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+}
