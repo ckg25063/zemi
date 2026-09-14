@@ -119,40 +119,156 @@ nav ul li a {
 }
 
 
-.midokoro {
-    height: calc(100vh - 100px);
-    padding: 30px 8%;
+/* =========================
+   見どころページ
+========================= */
+
+.midokoro-page {
+    background: #f8f7f2;
+    color: #172d43;
+}
+
+
+/* ページタイトル */
+
+.midokoro-title {
+    height: 400px;
+    background-image: url("images/IMG_0522.jpg");
+    background-size: 100%  ;
+    background-position: center 35%;
+    
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
     text-align: center;
 }
 
-.midokoro h2 {
-    font-size: 32px;
-    margin: 0 0 20px;
+
+
+.midokoro-title h2 {
+    font-size: 60px;
+    margin: 0 0 15px;
 }
 
-.festival {
-    max-width: 900px;
+.midokoro-title p {
+    font-size: 20px;
+}
+
+
+/* 見どころ1つ分 */
+
+.point {
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 70px 40px;
+
+    display: flex;
+    align-items: center;
+    gap: 70px;
+
+    border-bottom: 1px solid #ddd;
 }
 
-.festival img {
+
+/* 文章 */
+
+.point-text {
+    width: 45%;
+}
+
+.point-text span {
+    display: inline-block;
+
+    background: #b52323;
+    color: white;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    padding: 8px 30px;
+
+    margin-bottom: 20px;
+}
+
+.point-text h3 {
+    font-size: 40px;
+    margin: 0 0 25px;
+}
+
+.point-text h3::after {
+    content: "";
+    display: block;
+
+    width: 45px;
+    height: 5px;
+
+    background: #b52323;
+
+    margin-top: 15px;
+}
+
+.point-text p {
+    font-size: 17px;
+    line-height: 2;
+}
+
+
+/* 写真 */
+
+.point-image {
+    width: 55%;
+}
+
+.point-image img {
     width: 100%;
-    height: 650px;
+    height: 350px;
+
     object-fit: cover;
+
     display: block;
 }
 
-.description {
-    padding: 15px 20px;
+
+/* 02だけ左右反対 */
+
+.point-right {
+    flex-direction: row;
 }
 
-.description h3 {
-    font-size: 24px;
-    margin: 0 0 8px;
-}
 
-.description p {
-    font-size: 15px;
-    line-height: 1.5;
-    margin: 0;
+/* スマホ対応 */
+
+@media (max-width: 768px) {
+
+    .midokoro-title {
+        height: 220px;
+    }
+
+    .midokoro-title h2 {
+        font-size: 40px;
+    }
+
+    .point,
+    .point-right {
+        flex-direction: column;
+        gap: 30px;
+        padding: 50px 20px;
+    }
+
+    .point-text,
+    .point-image {
+        width: 100%;
+    }
+
+    .point-text h3 {
+        font-size: 30px;
+    }
+
+    .point-image img {
+        height: 300px;
+    }
 }
