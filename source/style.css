@@ -272,3 +272,361 @@ nav ul li a {
         height: 300px;
     }
 }
+
+/* =====================
+   全体
+===================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+    color: #172d43;
+    background: white;
+}
+
+
+/* =====================
+   ヘッダー
+===================== */
+
+
+.logo h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: flex;
+    align-items: center;
+}
+
+nav li + li::before {
+    content: "/";
+    margin: 0 13px;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+/* =====================
+   メインビジュアル
+===================== */
+
+.main-visual {
+    height: 205px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("images/IMG_0380.JPG");/*ヘッターの画像*/
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 4%;
+}
+
+.visual-text h2 {
+    font-size: 45px;
+    margin:50px 0 0 0 ;
+    
+}
+
+.visual-text p {
+    font-size: 16px;
+    margin: 0;
+}
+
+
+/* =====================
+   会場のご案内
+===================== */
+
+.venue {
+    padding: 30px 4% 25px;
+}
+
+.venue > h2,
+.access > h2 {
+    font-size: 30px;
+    margin: 0 0 18px;
+
+    border-left: 7px solid #172d43;
+    padding-left: 10px;
+}
+
+
+/* 2つのボックス */
+
+.venue-list {
+    display: flex;
+    gap: 20px;
+}
+
+.venue-box {
+    width: 50%;
+
+    border: 2px solid #888;
+    border-radius: 12px;
+
+    padding: 18px;
+
+    min-height: 285px;
+}
+
+.venue-box h3 {
+    font-size: 21px;
+    color: #111;
+
+    margin: 0 0 20px;
+}
+
+
+/* 情報 */
+
+.information {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 12px;
+
+    margin-bottom: 15px;
+}
+
+.information p {
+    margin: 0;
+
+    color: #222;
+
+    line-height: 1.5;
+}
+
+.mark {
+    font-size: 20px;
+    min-width: 25px;
+}
+
+
+/* 会場写真 */
+
+.venue-box img {
+    display: block;
+
+    width: 50%;
+    height: 100px;
+
+    object-fit: cover;
+
+    margin-top: -20px;
+}
+
+
+/* 車のアイコン */
+
+.access-icon {
+    height: 65px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 45px;
+}
+
+.venue-box hr {
+    border: none;
+    border-top: 1px solid #ccc;
+
+    margin: 12px 0;
+}
+
+
+/* =====================
+   アクセス
+===================== */
+
+.access {
+    background: #eef2f5;
+
+    padding: 25px 4% 35px;
+}
+
+.access-description {
+    margin: -5px 0 18px;
+}
+
+
+/* 地図＋詳細 */
+
+.access-area {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* 地図 */
+
+.map {
+    width: 67%;
+}
+
+.map img {
+    display: block;
+
+    width: 100%;
+    height: 240px;
+
+    object-fit: cover;
+
+    border: 3px solid white;
+}
+
+
+/* アクセス詳細 */
+
+.access-detail {
+    width: 33%;
+    background: white;
+    padding: 15px 20px;
+    height: fit-content;
+}
+
+.access-detail h3 {
+    font-size: 18px;
+    margin: 0 0 15px;
+}
+
+
+/* 手順 */
+
+.step {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin: 10px 0;
+}
+
+.step span {
+    width: 27px;
+    height: 27px;
+
+    border-radius: 50%;
+
+    background: #172d43;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+}
+
+.step p {
+    margin: 0;
+    color: #222;
+}
+
+.access-detail hr {
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.sea {
+    color: #222;
+    line-height: 1.5;
+}
+
+
+
+
+/* =====================
+   スマホ
+===================== */
+
+@media (max-width: 768px) {
+
+    header {
+        height: auto;
+
+        padding: 15px;
+
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .logo h1 {
+        font-size: 22px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav li + li::before {
+        margin: 0 7px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+
+    .main-visual {
+        height: 220px;
+        padding-left: 25px;
+    }
+
+    .visual-text h2 {
+        font-size: 35px;
+    }
+
+
+    .venue-list {
+        flex-direction: column;
+    }
+
+    .venue-box {
+        width: 100%;
+    }
+
+
+    .access-area {
+        flex-direction: column;
+    }
+
+    .map,
+    .access-detail {
+        width: 100%;
+    }
+
+    .map img {
+        height: 250px;
+    }
+}
