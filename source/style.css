@@ -1,3 +1,5 @@
+/*ホーム*/
+
 *{
     margin:0;
     padding:0;
@@ -119,9 +121,7 @@ nav ul li a {
 }
 
 
-/* =========================
-   見どころページ
-========================= */
+/* 見どころページ*/
 
 .midokoro-page {
     background: #f8f7f2;
@@ -361,9 +361,7 @@ nav a {
 }
 
 
-/* =====================
-   会場のご案内
-===================== */
+/* 開催*/
 
 .venue {
     padding: 30px 4% 25px;
@@ -435,19 +433,20 @@ nav a {
 .venue-box img {
     display: block;
 
-    width: 50%;
-    height: 100px;
+    width: 40%;
+    height: 170px;
 
     object-fit: cover;
 
-    margin-top: -20px;
+    margin-top: -10px;
 }
+
 
 
 /* 車のアイコン */
 
 .access-icon {
-    height: 65px;
+    height: 150px;
 
     display: flex;
     justify-content: center;
@@ -508,10 +507,10 @@ nav a {
 /* アクセス詳細 */
 
 .access-detail {
-    width: 33%;
+     width: 33%;
     background: white;
     padding: 15px 20px;
-    height: fit-content;
+    align-self: center;
 }
 
 .access-detail h3 {
@@ -629,4 +628,139 @@ nav a {
     .map img {
         height: 250px;
     }
+}
+
+
+/* =========================
+   お問い合わせページ
+   ========================= */
+
+.otoiawase {
+    margin: 0;
+    font-family: sans-serif;
+    color: #172d43;
+}
+
+
+/* ヘッダー */
+.otoiawase .otoiawase-header {
+    height: 70px;
+    background-color: #172d43;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 40px;
+}
+
+.otoiawase .otoiawase-header h1 {
+    margin: 0;
+    font-size: 25px;
+}
+
+.otoiawase .otoiawase-header nav {
+    display: flex;
+}
+
+.otoiawase .otoiawase-header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+
+/* メイン画像 */
+.otoiawase .otoiawase-image {
+    height: 280px;
+
+    background-image:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url("images/header.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 10%;
+}
+
+.otoiawase .otoiawase-image h2 {
+    font-size: 50px;
+    margin: 0 0 15px;
+}
+
+.otoiawase .otoiawase-image p {
+    font-size: 18px;
+}
+
+
+/* お問い合わせ部分 */
+.otoiawase .otoiawase-main {
+    background-color: #f2f6f9;
+
+    display: flex;
+    gap: 25px;
+
+    padding: 50px 8%;
+}
+
+
+/* フォーム */
+.otoiawase .otoiawase-form {
+    width: 70%;
+    background-color: white;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.otoiawase .otoiawase-form h2 {
+    border-left: 5px solid #172d43;
+    padding-left: 10px;
+}
+
+.otoiawase .otoiawase-form label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.otoiawase .otoiawase-form input,
+.otoiawase .otoiawase-form textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.otoiawase .otoiawase-form textarea {
+    height: 130px;
+}
+
+.otoiawase .otoiawase-form input[type="submit"] {
+    width: 40%;
+    margin: 30px auto 0;
+    display: block;
+
+    background-color: #172d43;
+    color: white;
+    border: none;
+}
+
+
+/* お問い合わせ先 */
+.otoiawase .otoiawase-info {
+    width: 30%;
+    background-color: #e8f0f7;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.otoiawase .otoiawase-info h2 {
+    margin-top: 0;
 }
