@@ -665,14 +665,15 @@ nav a {
 
 /* メイン画像 */
 .otoiawase .otoiawase-image {
-    height: 280px;
+    height: 330px;
 
     background-image:
         linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-        url("images/header.jpg");
+        url("images/IMG_0365.jpg");
 
     background-size: cover;
-    background-position: center;
+    background-position: 70% 55%;
+    
 
     color: white;
 
@@ -680,7 +681,7 @@ nav a {
     flex-direction: column;
     justify-content: center;
 
-    padding-left: 10%;
+    padding-left: 70%;
 }
 
 .otoiawase .otoiawase-image h2 {
