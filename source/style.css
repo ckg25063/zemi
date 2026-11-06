@@ -757,3 +757,24 @@ nav a {
 .otoiawase .otoiawase-info h2 {
     margin-top: 0;
 }
+
+
+
+
+
+.rekisi-main {
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rekisi-main h2 {
+    font-size: 80px;
+    color:white;
+}
+
+.rekisi-main {
+    background-color: black;
+    color: white;
+}
